@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle Annonce</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/ODEGOS.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil </a></li>
+            <li><a href="Annonces.html">Parcourir les Annonces </a></li>
+            <li><a href="New-Annonce.html">Créer Une Annonces</a></li>
+            <li><a href="membre.html">Espace Membre</a></li>
+        </ul>
+      </nav>
+    <header>
+        <h1>Nouvelle Annonce</h1>
+    </header>
+    <main>
+        <form action="submit_annonce.php" method="POST">
+            <div>
+                <label for="titre">Titre de l'annonce :</label>
+                <input type="text" id="titre" name="titre" required>
+            </div>
+            <div>
+                <label for="contenu">Contenu de l'annonce :</label>
+                <textarea id="contenu" name="contenu" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="photo">Photo :</label>
+                <input type="file" id="photo" name="photo">
+            </div>
+            <div>
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" required>
+            </div>
+            <button type="submit">Soumettre l'annonce</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Odegos</p>
+    </footer>
+</body>
+</html>

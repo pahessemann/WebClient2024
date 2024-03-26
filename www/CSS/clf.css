@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.box h2 {
+    margin-top: 0;
+}
+.box p {
+    margin-bottom: 10px;
+}
+.reserve-btn {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}

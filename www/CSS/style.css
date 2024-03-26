@@ -1,0 +1,293 @@
+/* Utilisation de la police Roboto de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Styles généraux */
+body {
+font-family: 'Roboto', sans-serif;
+padding: 50px;
+background-color: #f2f2f2;
+color: #333;
+}
+
+/* Styles de la barre de navigation */
+nav {
+background-color: #333;
+color: #fff;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+justify-content: center;
+align-items: center;
+}
+
+nav ul {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+margin-right: 20px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+text-transform: uppercase;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Styles pour les boutons */
+button,
+input[type="submit"] {
+background-color: #333;
+color: #fff;
+padding: 10px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+
+button:hover,
+input[type="submit"]:hover {
+background-color: #444;
+}
+
+/* Styles pour les formulaires */
+form {
+width: 50%;
+margin: 20px auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les messages d'erreur et de succès */
+.error-message,
+.success-message {
+color: red;
+margin-top: 5px;
+font-weight: bold;
+}
+
+.success-message {
+color: green;
+}
+
+/* Styles pour les vidéos */
+.videos {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.video {
+width: 300px;
+height: 200px;
+background-color: #fff;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+overflow: hidden;
+position: relative;
+}
+
+.video img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.2s;
+}
+
+.video:hover img {
+transform: scale(1.1);
+}
+
+.video .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .video .overlay h3 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .video .overlay span {
+    color: #fff;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+
+/* Styles pour le bouton retour en haut de page */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+    }
+    
+    .back-to-top:hover {
+    background-color: #444;
+    }
+    
+    /* Styles pour la section footer */
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    }
+    
+    .footer-links a:last-child {
+    margin-right: 0;
+    }
+    
+    .footer-social {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    }
+    
+    .footer-social a:last-child {
+    margin-right: 0;
+    }
+    
+    /* Styles pour les boutons de partage sur les réseaux sociaux */
+    .social-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    }
+    
+    .social-button:hover {
+    background-color: #444;
+    }
+    
+    /* Styles pour les icônes de réseaux sociaux */
+    .social-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    }
+    
+    /* Styles pour les sections avec une image en background */
+    .section {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    .section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .section h2 {
+    margin-top: 0;
+    }
+    
+    .section p {
+    margin-bottom: 0;
+    }
+    
+    /* Styles pour les images carrées */
+    .square-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    }
+    
+    .square-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    .square-image .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 20px;
+      }

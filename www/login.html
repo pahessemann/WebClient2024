@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/ODEGOS.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/flex.css">
+    <script src="./JS/login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Annonces.html">Parcourir les Annonces</a></li>
+                <li><a href="New-Annonce.html">Créer Une Annonces</a></li>
+                <li><a href="membre.html">Espace Membre</a></li>
+                <li><a href="chatbox.html">Forum</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Connexion</h2>
+            <form action="/cgi-bin/login.py" method="post" onsubmit="return validateLoginForm();">
+                <label for="username">Nom d'utilisateur :</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="userpwd">Mot de passe :</label><br>
+                <input type="password" id="userpwd" name="userpwd"><br><br>
+                <input type="submit" value="Se connecter">
+            </form>
+            <noscript>Veuillez activer JavaScript pour utiliser ce formulaire.</noscript>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Odegos</p>
+    </footer>
+</body>
+</html>

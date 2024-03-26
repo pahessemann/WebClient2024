@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page de connexion</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./CSS/ODEGOS.css">
+</head>
+
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil </a></li>
+        <li><a href="Annonces.html">Parcourir les Annonces </a></li>
+        <li><a href="New-Annonce.html">Créer Une Annonces</a></li>
+        <li><a href="membre.html">Espace Membre</a></li>
+    </ul>
+  </nav>
+
+<body>
+  <h1>Page de connexion</h1>
+  <form method="post" action="/htbin/login.py">
+      <label for="username">Nom d'utilisateur :</label>
+      <input type="text" name="username" id="username" required><br>
+      <label for="password">Mot de passe :</label>
+      <input type="password" name="userpwd" id="password" required><br>
+      <input type="submit" value="Se connecter">
+  </form>
+  <div id="message"></div>
+  <script src="./JS/login.js"></script>
+
+
+</div>
+</body>
+</html>

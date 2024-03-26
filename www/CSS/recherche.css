@@ -1,0 +1,13 @@
+header {
+    text-align: center; /* Centre le contenu horizontalement */
+    margin-top: 50px; /* Espacement par rapport au haut de la page */
+}
+
+form {
+    display: inline-block; /* Permet de centrer les boutons sous la barre de recherche */
+}
+
+.luck-btn {
+    display: inline-block; /* Affiche le bouton "J'ai de la chance" sur la même ligne que la barre de recherche */
+    margin-left: 10px; /* Espacement entre les boutons */
+}

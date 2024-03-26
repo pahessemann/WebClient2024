@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <noscript>
+            <p>Veuillez activer JavaScript pour profiter pleinement de notre site web.</p>
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="./CSS/ODEGOS.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/flex.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Accueil </a></li>
+        <li><a href="Annonces.html">Parcourir les Annonces </a></li>
+        <li><a href="New-Annonce.html">Créer Une Annonces</a></li>
+        <li><a href="membre.html">Espace Membre</a></li>
+    </ul>
+    
+    <main>
+        <h1>Inscription</h1>
+        <form id="inscription-form" action="/htbin/register.py" method="post">
+            <label for="nom">Noms et prénoms *</label>
+            <input type="text" id="nom" name="lastname" required>
+            <label for="date">Date de naissance (jj/mm/aaaa)</label>
+            <input type="text" id="date" name="birthdate">
+            <label for="username">Nom d'utilisateur *</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe *</label>
+            <input type="password" id="password" name="userpwd" required>
+            <label for="email">Adresse email *</label>
+            <input type="text" id="email" name="useremail" required>
+            <button type="submit" id="submit-btn">S'inscrire</button>
+        </form>
+        <div id="inscription-message"></div>
+    </main>
+    <script src="./JS/validation.js"></script>
+</body>
+</html>
